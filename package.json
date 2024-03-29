@@ -28,7 +28,7 @@
     "dev:workerd": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
     "pretty": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
-    "build": "npm run build",
+    "build": "rollup -c",
     "prepublishOnly": "npm run build",
     "start": "node build/start-server.js",
     "format": "prettier --write \"./**/*.{js,jsx,ts,tsx,json}\"",
